@@ -8,35 +8,49 @@ def calculator (num1,num2,task):
     # if task== True:
         if task=="+":
             return num1+num2
+
         if task=="-":
             return num1-num2
+
         if task=="*":
             return num1*num2
+
         if task=="/":
             return num1/num2
+
         if task=="^":
             return num1**num2
+
         if task=='!':
             s=1
             for i in range(1,int(num1+1)):
                 s=s*i
             return s
+
         if task=="`":
             return 1/num1
+
         if task=="/-":
             return sqrt(num1)
+
         if task=="s":
             return sin(num1)
+
         if task=="c":
             return cos(num1)
+
         if task=="t":
             return tan(num1)
+
         if task=="cs":
             return 1/sin(num1)
+
         if task=="sec":
             return 1/cos(num1)
+
         if task=="ct":
             return 1/tan(num1)
+
         if task=='C':
             def factorial(a):
                 o = 1
@@ -49,6 +63,7 @@ def calculator (num1,num2,task):
             return( e/(t*r))
         if task=="b":
             return bin(int(num1))
+
         if task=='d':
             ff=qq=0
             ss=str(num1)
@@ -57,11 +72,7 @@ def calculator (num1,num2,task):
                 ff=ff+1
                 qq= qq + ((ord(ii)) * (2**ff))
             return qq
-
-
-
-        # else:
-        #     return False
+       
 result= calculator(num1,num2,task)
 print("  THE RESULT IS : ", result)
 
